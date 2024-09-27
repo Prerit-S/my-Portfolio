@@ -159,9 +159,10 @@
       font-family: 'Ubuntu', sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;    
+      align-items: center;
     }
-      .home .home-content {
+
+    .home .home-content {
       width: 90%;
       height: 100%;
       margin: auto;
@@ -610,9 +611,114 @@
     footer .social-media a:hover {
       color: #333;
     }
+    
+    /* Responsive Design */
+    
+    @media (max-width: 1200px) {
+      .home .home-content {
+        width: 80%;
+      }
+      
+      .about .about-details {
+        flex-direction: column;
+      }
+      
+      .about .about-details .left {
+        width: 100%;
+      }
+      
+      .about .about-details .right {
+        width: 100%;
+      }
+      
+      .skills .skills-details {
+        flex-direction: column;
+      }
+      
+      .skills .skills-details .text {
+        width: 100%;
+      }
+      
+      .skills .skills-details .boxes {
+        width: 100%;
+      }
+      
+      .services .boxes {
+        flex-direction: column;
+      }
+      
+      .services .boxes .box {
+        width: 100%;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .home .home-content {
+        width: 90%;
+      }
+      
+      .navbar {
+        flex-direction: column;
+      }
+      
+      .navbar .logo {
+        margin-bottom: 20px;
+      }
+      
+      .navbar .menu {
+        flex-direction: column;
+      }
+      
+      .navbar .menu li {
+        margin-bottom: 20px;
+      }
+      
+      .about .about-details {
+        margin-top: 20px;
+      }
+      
+      .skills .skills-details {
+        margin-top: 20px;
+      }
+      
+      .services .boxes {
+        margin-top: 20px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .home .home-content {
+        width: 100%;
+      }
+      
+      .navbar {
+        padding: 10px 0;
+      }
+      
+      .navbar .logo {
+        font-size: 25px;
+      }
+      
+      .navbar .menu li {
+        font-size: 18px;
+      }
+      
+      .about .about-details {
+        margin-top: 10px;
+      }
+      
+      .skills .skills-details {
+        margin-top: 10px;
+      }
+      
+      .services .boxes {
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 <body>
+  <!-- Your HTML content here -->
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
   </div>
